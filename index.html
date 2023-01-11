@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header id="header">Weather Dashboard</header>
+
+    <main>
+      <div id="search-container">
+        <div id="form-container">
+          <form>
+            <label for="Search" id="search-text">Search for a city:</label
+            ><br />
+            <input type="text" id="search-input" /><br />
+            <input type="submit" id="search-submit" value="Search" />
+          </form>
+        </div>
+        <div id="search-history">
+          <div id="search-history-text">Search History</div>
+        </div>
+      </div>
+      <div id="results-container">
+        <div id="results-today">
+          <div id="city-and-date">City</div>
+          <div id="temp" class="results-text">Temp:</div>
+          <div id="wind" class="results-text">Wind:</div>
+          <div id="humidity" class="results-text">Humidity:</div>
+        </div>
+        <div id="five-day-container">
+          <div id="five-day-text">5-Day Forcast:</div>
+          <div id="card-container">
+            <div class="five-day-cards"></div>
+            <div class="five-day-cards"></div>
+            <div class="five-day-cards"></div>
+            <div class="five-day-cards"></div>
+            <div div class="five-day-cards"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
