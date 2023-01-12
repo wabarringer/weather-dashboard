@@ -1,98 +1,49 @@
-# weather-dashboard
+# weather-dashboard (INCOMPLETE)
+
 =============================
 
-Description
------------
+## Description
 
 A 5 day weather forecast dashboard.
 
--   What was your motivation? 
--   Why did you build this project? (Note: the answer is not "Because it
-    was a homework assignment.")
--   What problem does it solve? 
--   What did you learn? 
+- What was your motivation?
+  I wanted to create a weather app.
 
-Table of Contents (Optional)
-----------------------------
+- Why did you build this project?
+  I wanted to build something that would give me experience with server side apis
+
+- What problem does it solve?
+  It lets you check the weather!
+
+- What did you learn?
+  I learned more about setting up a layout by scratch and how to use server side apis with javascript.
+
+## Table of Contents (Optional)
 
 If your README is long, add a table of contents to make it easy for
 users to find what they need.
 
--   [Installation](#installation)
--   [Usage](#usage)
--   [Credits](#credits)
--   [License](#license)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-Installation
-------------
+## Installation
 
--   What are the steps required to install your project? Provide a
-    step-by-step description of how to get the development environment
-    running.
+No installation needed.
 
+## Usage
 
-Usage
------
+Input the city you want to search for and hit the search button.
 
--   Provide instructions and examples for use. Include screenshots as
-    needed.
+![screenshot of web quiz](./wd-screen-shot.PNG)
 
--   To add a screenshot, create an `assets/images` folder in your
-    repository and upload your screenshot to it. Then, using the
-    relative filepath, add it to your README using the following syntax:
+## Credits
 
-    ``` {.md}
-    ![screenshot of web quiz](assets/Capture01.png)
-    ```
+N/A
 
-Credits
--------
+## License
 
--   List your collaborators, if any, with links to their GitHub
-    profiles.
+N/A
 
-If you used any third-party assets that require attribution, list the
-creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-License
--------
-
-The last section of a high-quality README file is the license. This lets
-other developers know what they can and cannot do with your project. If
-you need help choosing a license, refer to
-<https://choosealicense.com/>.
-
-------------------------------------------------------------------------
-
-🏆 The previous sections are the bare minimum, and your project will
-ultimately determine the content of this document. You might also want
-to consider adding the following sections.
-
-Badges
-------
-
-Badges aren't necessary, per se, but they demonstrate street cred.
-Badges let other developers know that you know what you're doing. Check
-out the badges hosted by [shields.io](https://shields.io/). You may not
-understand what they all represent now, but you will in time.
-
-Features
---------
-
-If your project has a lot of features, list them here.
-
-How to Contribute
------------------
-
-If you created an application or package and would like other developers
-to contribute it, you can include guidelines for how to do so. The
-[Contributor Covenant](https://www.contributor-covenant.org/) is an
-industry standard, but you can always write your own if you'd prefer.
-
-Tests
------
-
-Go the extra mile and write tests for your application. Then provide
-examples on how to run them here.
+---

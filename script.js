@@ -27,5 +27,12 @@ searchBtn.addEventListener("click", function (event) {
       wind.textContent = data.wind.speed;
       var temp = document.querySelector("#temp");
       temp.textContent = data.main.temp;
+      var searchHistory = document.querySelector("#search-history");
+      var rendHistory = document.createElement("li");
+      rendHistory.textContent = data.name;
+      searchHistory.appendChild(rendHistory);
     });
 });
+
+// TODO: Complete 5-day forecast
+// TODO: Use local storage to save search history
