@@ -1,20 +1,31 @@
-//api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+// REMEMBER: use '&units=imperial' to change units
 
-// api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+var searchBtn = document.querySelector("#search-submit");
 
-var APIKey = "8ad70e74572f664ca155cb48d464c8e4";
+searchBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  var city = document.querySelector("#search-input").value;
+  var APIKey = "c863bf056289dd1738a1fb73f8b47dd5";
+  var queryUrl =
+    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    city +
+    "&appid=" +
+    APIKey +
+    "&units=imperial";
 
-// var queryUrl = "http://api.openweathermap.org/data/2.5/weather?q=";
-
-var queryUrl =
-  "http://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=ad70e74572f664ca155cb48d464c8e4";
-
-var city = document.querySelector("#search-input").value;
-
-fetch(queryUrl)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    console.log(data);
-  });
+  fetch(queryUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      var resultDisName = document.querySelector("#city-and-date");
+      resultDisName.textContent = data.name;
+      var humidity = document.querySelector("#humidity");
+      humidity.textContent = data.main.humidity;
+      var wind = document.querySelector("#wind");
+      wind.textContent = data.wind.speed;
+      var temp = document.querySelector("#temp");
+      temp.textContent = data.main.temp;
+    });
+});
