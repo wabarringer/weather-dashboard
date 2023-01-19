@@ -55,10 +55,15 @@ main {
     width: 100%;
 }
 
-#search-history {
+#clear-history {
+    width: 100%;
+}
+
+#search-history-container {
     display: flex;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
     flex-direction: column;
     /* background-color: aqua; */
     width: 100%;
@@ -72,6 +77,12 @@ main {
     text-align: center;
     font-size: larger;
     text-decoration: underline;
+}
+
+#search-history {
+   list-style-type: none;
+   display: inline-block;
+   text-align: left;
 }
 
 #results-container {
@@ -105,6 +116,16 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.icon {
+    background-color: dodgerblue;
+    border-radius: 5px;
+}
+
+.icon-5day {
+    background-color: white;
+    border-radius: 5px;
 }
 
 .five-day-cards {

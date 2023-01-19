@@ -17,14 +17,17 @@
             <label for="Search" id="search-text">Search for a city:</label
             ><br />
             <input type="text" id="search-input" /><br />
-            <input type="submit" id="search-submit" value="Search" />
+            <input type="submit" id="search-submit" value="Search" /><br />
+            <input
+              type="submit"
+              id="clear-history"
+              value="Clear Search History"
+            />
           </form>
         </div>
-        <div id="search-history">
-          <div id="search-history-text">
-            Search History
-            <ul id="search-history"></ul>
-          </div>
+        <div id="search-history-container">
+          <p id="search-history-text">Search History</p>
+          <ul id="search-history"></ul>
         </div>
       </div>
       <div id="results-container">
@@ -37,15 +40,20 @@
         <div id="five-day-container">
           <div id="five-day-text">5-Day Forcast:</div>
           <div id="card-container">
-            <div class="five-day-cards"></div>
-            <div class="five-day-cards"></div>
-            <div class="five-day-cards"></div>
-            <div class="five-day-cards"></div>
-            <div class="five-day-cards"></div>
+            <!-- <div class="five-day-cards hide"></div>
+            <div class="five-day-cards hide"></div>
+            <div class="five-day-cards hide"></div>
+            <div class="five-day-cards hide"></div>
+            <div class="five-day-cards hide"></div> -->
           </div>
         </div>
       </div>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
