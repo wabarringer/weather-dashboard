@@ -16,7 +16,7 @@ searchBtn.addEventListener("click", function (event) {
   var city = document.querySelector("#search-input").value;
   var APIKey = "c863bf056289dd1738a1fb73f8b47dd5";
   var queryUrl =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
     "&appid=" +
     APIKey +
@@ -35,7 +35,7 @@ searchBtn.addEventListener("click", function (event) {
       console.log(lat);
       var lon = data.coord.lon;
       var query5DayUrl =
-        "http://api.openweathermap.org/data/2.5/forecast?lat=" +
+        "https://api.openweathermap.org/data/2.5/forecast?lat=" +
         lat +
         "&lon=" +
         lon +
@@ -70,7 +70,7 @@ function dailyResults(data) {
 function weatherIconResult(data) {
   dataIcon = data.weather[0].icon;
   console.log(dataIcon);
-  var iconPath = "http://openweathermap.org/img/wn/" + dataIcon + "@2x.png";
+  var iconPath = "https://openweathermap.org/img/wn/" + dataIcon + "@2x.png";
   var iconEl = document.createElement("img");
   iconEl.setAttribute("src", iconPath);
   iconEl.setAttribute("height", "50px");
@@ -95,7 +95,7 @@ function render5Day(data) {
     date5Day.innerText = dataDate5Day;
     card5Day.append(date5Day);
     var iconPath5Day =
-      "http://openweathermap.org/img/wn/" + dataIcon5Day + "@2x.png";
+      "https://openweathermap.org/img/wn/" + dataIcon5Day + "@2x.png";
     var iconEl5Day = document.createElement("img");
     iconEl5Day.setAttribute("src", iconPath5Day);
     iconEl5Day.setAttribute("height", "50px");
